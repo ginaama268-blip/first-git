@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield | Advanced Protection</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { margin: 0; background: #0a0a0b; color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        #canvas-container { position: fixed; top: 0; left: 0; z-index: -1; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero-text { text-shadow: 0 0 20px #00d4ff; }
+    </style>
+</head>
+<body>
+
+    <div id="canvas-container"></div>
+
+    <nav class="flex justify-between items-center p-6 fixed w-full z-50 glass">
+        <h1 class="text-2xl font-bold tracking-tighter">CYBER<span class="text-blue-500">SHIELD</span></h1>
+        <div class="space-x-8 hidden md:flex">
+            <a href="#home" class="hover:text-blue-400">Home</a>
+            <a href="#services" class="hover:text-blue-400">Services</a>
+            <a href="#testimonials" class="hover:text-blue-400">Clients</a>
+            <a href="#contact" class="hover:text-blue-400">Contact</a>
+        </div>
+        <a href="#booking" class="bg-blue-600 hover:bg-blue-500 px-5 py-2 rounded-full transition">Free Booking</a>
+    </nav>
+
+    <section id="home" class="h-screen flex flex-col justify-center items-center text-center px-4">
+        <h2 class="text-6xl md:text-8xl font-extrabold hero-text mb-4">SECURE YOUR DATA</h2>
+        <p class="text-gray-400 max-w-xl">I help small businesses stay secure and prevent cyber attacks.CyberShield provides military-grade encryption and real-time threat detection for your digital assets.</p>
+    </section>
+
+    <section id="services" class="py-20 px-10">
+        <h3 class="text-4xl font-bold text-center mb-12">My Services</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-2xl hover:scale-105 transition">
+                <i class="fas fa-shield-alt text-4xl text-blue-500 mb-4"></i>
+                <h4 class="text-xl font-bold mb-2">Security Audit</h4>
+                <p class="text-gray-400">Complete monitoring of your internal networks, Identify vulnerabilities in your business systems.</p>
+                <p><strong>£99</strong></p>
+            </div>
+            <div class="glass p-8 rounded-2xl hover:scale-105 transition">
+                <i class="fas fa-user-secret text-4xl text-blue-500 mb-4"></i>
+                <h4 class="text-xl font-bold mb-2">Protection Setup</h4>
+                <p class="text-gray-400">We find the holes before the hackers do, Secure your emails, passwords, and data.</p>
+                <p><strong>£300+</strong></p>
+            </div>
+            <div class="glass p-8 rounded-2xl hover:scale-105 transition">
+                <i class="fas fa-cloud-lock text-4xl text-blue-500 mb-4"></i>
+                <h4 class="text-xl font-bold mb-2">Emergency Support</h4>
+                <p class="text-gray-400">Help if your business is hacked..</p>
+                 <p><strong>£500+</strong></p>
+            </div>
+            <div> 
+            </div>
+    </section>
+
+    
+
+<section id="testimonials" class="py-20 bg-blue-900/10 px-10">
+    <h3 class="text-4xl font-bold text-center mb-16">Trusted by Industry Leaders</h3>
+    <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        
+        <!-- Client 1 -->
+        <div class="glass p-8 rounded-2xl border-l-4 border-blue-500">
+            <div class="flex text-yellow-400 mb-4 text-sm">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text-gray-300 italic mb-6">"CyberShield transformed our security protocol. We haven't had a single breach since implementation. Their response time is unmatched."</p>
+            <div class="flex items-center">
+                <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center mr-3 font-bold">AR</div>
+                <div>
+                    <p class="font-bold">Alex Rivers</p>
+                    <p class="text-xs text-blue-400 uppercase tracking-widest">Online Shop Owner</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Client 2 -->
+        <div class="glass p-8 rounded-2xl border-l-4 border-blue-500">
+            <div class="flex text-yellow-400 mb-4 text-sm">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text-gray-300 italic mb-6">"As a small business, I was terrified of being hacked. They made the setup simple and affordable. I can finally sleep at night."</p>
+            <div class="flex items-center">
+                <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center mr-3 font-bold">SM</div>
+                <div>
+                    <p class="font-bold">Sarah Miller</p>
+                    <p class="text-xs text-blue-400 uppercase tracking-widest">Founder, Miller Retail</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Client 3 -->
+        <div class="glass p-8 rounded-2xl border-l-4 border-blue-500">
+            <div class="flex text-yellow-400 mb-4 text-sm">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text-gray-300 italic mb-6">"The emergency support was a lifesaver. They recovered our data within hours after a ransomware attack. Absolutely essential service."[cite: 1]</p>
+            <div class="flex items-center">
+                <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center mr-3 font-bold">JD</div>
+                <div>
+                    <p class="font-bold">James Duke</p>
+                    <p class="text-xs text-blue-400 uppercase tracking-widest">Small business Owner</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section> 
+        
+        <!-- CONTACT -->
+<section <!-- CONTACT SECTION -->
+<section id="contact" class="py-20 px-10">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-4">Contact Me</h2>
+        <p class="text-gray-400 mb-10">Get in touch for a free consultation and secure your business today.</p>
+
+        <!-- Glassmorphism Form Container -->
+        <div class="glass p-8 md:p-12 rounded-3xl shadow-2xl">
+            <!-- Replace 'YOUR-CODE' with your actual Formspree ID -->
+            <form action="https://formspree.io/f/YOUR-CODE" method="POST" class="flex flex-col space-y-4">
+                
+                <input type="text" name="name" placeholder="Your Name" required 
+                    class="w-full p-4 rounded-xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none transition text-white">
+                
+                <input type="email" name="email" placeholder="Your Email" required 
+                    class="w-full p-4 rounded-xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none transition text-white">
+                
+                <textarea name="message" rows="5" placeholder="Tell me about your security needs..." required
+                    class="w-full p-4 rounded-xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none transition text-white resize-none"></textarea>
+                
+                <button type="submit" 
+                    class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl transition-all transform hover:scale-[1.02] active:scale-95 shadow-lg shadow-blue-500/20">
+                    Send Secure Message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+    <a href="https://wa.me/07950763236" class="fixed bottom-8 right-8 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-lg hover:bg-green-400 transition z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer id="contact" class="p-10 border-t border-gray-800 text-center">
+        <p>&copy; 2026 CyberShield. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Basic Three.js 3D Background
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        // Create a 3D Geometry (Wireframe Sphere for a "Cyber" look)
+        const geometry = new THREE.IcosahedronGeometry(10, 1);
+        const material = new THREE.MeshBasicMaterial({ color: 0x00d4ff, wireframe: true });
+        const sphere = new THREE.Mesh(geometry, material);
+        scene.add(sphere);
+
+        camera.position.z = 20;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            sphere.rotation.x += 0.002;
+            sphere.rotation.y += 0.002;
+            renderer.render(scene, camera);
+        }
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        animate();
+    </script>
+</body>
+</html>
